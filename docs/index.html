@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minnetonka Drone Tracker — Support</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px; color: #1d1d1f; }
+        h1 { font-size: 32px; margin-bottom: 8px; text-align: center; }
+        .subtitle { color: #666; font-size: 16px; margin-bottom: 40px; text-align: center; }
+        .intro { text-align: center; margin-bottom: 32px; }
+        .links { display: flex; gap: 12px; margin: 24px 0; }
+        a.btn { flex: 1; display: block; padding: 14px; background: #f5f5f7; color: #1d1d1f; text-decoration: none; border-radius: 12px; font-weight: 600; font-size: 14px; text-align: center; }
+        a.btn:hover { background: #e8e8ed; }
+        h2 { font-size: 20px; margin-top: 40px; }
+        .form-group { margin-bottom: 16px; }
+        label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+        input, textarea, select { width: 100%; padding: 12px; border: 1px solid #d2d2d7; border-radius: 10px; font-size: 15px; font-family: inherit; box-sizing: border-box; }
+        textarea { resize: vertical; min-height: 120px; }
+        select { appearance: none; background: white; }
+        button[type="submit"] { width: 100%; padding: 14px; background: #0071e3; color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 8px; }
+        button[type="submit"]:hover { background: #0066cc; }
+        .success { display: none; padding: 20px; background: #e8f5e9; border-radius: 12px; text-align: center; color: #2e7d32; }
+        .faq-item { margin-bottom: 16px; }
+        .faq-item strong { display: block; margin-bottom: 4px; }
+        .faq-item p { margin: 0; color: #666; font-size: 14px; }
+        .footer { margin-top: 48px; color: #999; font-size: 12px; line-height: 1.6; text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Minnetonka Drone Tracker</h1>
+    <p class="subtitle">Public Safety Flight Monitor</p>
+
+    <p class="intro">See every public safety drone flight in Minnetonka, MN. Watch animated mission replays and get alerts when drones operate near you.</p>
+
+    <div class="links">
+        <a class="btn" href="privacy.html">Privacy Policy</a>
+        <a class="btn" href="terms.html">Terms of Use</a>
+    </div>
+
+    <h2>Contact Support</h2>
+    <p style="font-size: 14px; color: #666; margin-bottom: 20px;">Have a question, issue, or feedback? We typically respond within 24 hours.</p>
+
+    <form id="supportForm" action="https://formsubmit.co/cartersjensen@gmail.com" method="POST">
+        <!-- FormSubmit.co config: hides your email, no signup needed -->
+        <input type="hidden" name="_subject" value="Drone Tracker Support Request">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="">
+        <input type="text" name="_honey" style="display:none">
+
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+
+        <div class="form-group">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+                <option value="">Select a topic...</option>
+                <option value="bug">Bug Report</option>
+                <option value="feature">Feature Request</option>
+                <option value="subscription">Subscription / Billing</option>
+                <option value="data">Flight Data Question</option>
+                <option value="privacy">Privacy / Data Deletion</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Describe your issue or question..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="success" id="successMsg">
+        <strong>Message sent!</strong><br>We'll get back to you within 24 hours.
+    </div>
+
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+        <strong>Where does the flight data come from?</strong>
+        <p>All data is sourced from the City of Minnetonka's public transparency portal. It is public record.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Is this real-time?</strong>
+        <p>Flight data is typically available within hours of a mission ending. It is not live or real-time.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How do alerts work?</strong>
+        <p>Save locations you care about (home, school, workplace) and get push notifications when drone flights occur nearby. Premium subscription required for alerts.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>Is this an official city app?</strong>
+        <p>No. This is an independent project by CJC Digital LLC. It is not affiliated with any government agency.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How do I cancel my subscription?</strong>
+        <p>Open the Settings app on your iPhone → tap your name → Subscriptions → Minnetonka Drone Tracker → Cancel.</p>
+    </div>
+
+    <div class="faq-item">
+        <strong>How do I delete my data?</strong>
+        <p>Use the support form above with the topic "Privacy / Data Deletion" and we will process your request within 30 days.</p>
+    </div>
+
+    <p class="footer">
+        CJC Digital LLC<br><br>
+        Not affiliated with the City of Minnetonka, Minnetonka Police Department, or Skydio Inc.
+    </p>
+
+    <script>
+        // Update _next to redirect back to this page with success param
+        const form = document.getElementById('supportForm');
+        const currentUrl = window.location.href.split('?')[0];
+        form.querySelector('[name="_next"]').value = currentUrl + '?sent=true';
+
+        // Show success message if redirected back
+        if (window.location.search.includes('sent=true')) {
+            document.getElementById('supportForm').style.display = 'none';
+            document.getElementById('successMsg').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
